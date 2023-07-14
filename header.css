@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    /* padding: 20px; */
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center
+}
+.icono{
+    background-size: cover;
+    width: 50px;
+    background-image: transparent;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    background-color: #ceecfb;
+    padding: 0.5rem;
+    border-radius: 20px;
+    /* width: ; */
+}
+.busqueda input{
+    border: none;
+    width: fit-content;
+    background-color: transparent;
+}
+.busqueda input:focus{
+    outline:0;
+}
+.busqueda button{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border:none;
+    width: 21px;
+    height: 21px;
+}
+.busqueda button img{
+    height: 100%;
+    filter: sepia(100%) contrast(10%) saturate(500%) hue-rotate(423deg);
+}
+
+.login button{
+    background-color: transparent;
+    border:2px solid #95bdf2;
+    transition: ease 0.2s;
+    width: 60px;
+    height: 30px;
+}
+.login button:focus{
+    background-color: #95bdf2;
+    transform-box:  fill-box ;
+}
