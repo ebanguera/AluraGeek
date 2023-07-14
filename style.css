@@ -6,8 +6,11 @@
     --preto-50: #A2A2A2;
     --preto-30:#C8C8C8;
     --preto-0: #FFFFFF;
+    --cajas: #ceecfb;
+    --bordes:#95bdf2;
 }
 body{
     margin:0;
+    background-color: var(--background-color);
     /* padding: 20px; */
 }
