@@ -1,0 +1,13 @@
+:root{
+    --background-color: #F5F5F5;
+    --azul-100: #2A7AE4;
+    --azul-10: #EAF2FD;
+    --preto-100: #464646;
+    --preto-50: #A2A2A2;
+    --preto-30:#C8C8C8;
+    --preto-0: #FFFFFF;
+}
+body{
+    margin:0;
+    /* padding: 20px; */
+}
