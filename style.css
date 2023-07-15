@@ -12,7 +12,7 @@
 body{
     margin:0;
     background-color: var(--background-color);
-    font-family: Raleway;
+    font-family: 'Raleway';
     gap: 32px;
     flex-direction: column;
     display: flex;
