@@ -1,17 +1,27 @@
 .contacto__banner{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 112px;
+    padding: 64px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.hablemos{
-    width: fit-content;
+footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+footer p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 10px;
 }
