@@ -10,6 +10,7 @@ header{
     align-items: center;
     padding: 10px;
     flex-wrap: wrap;
+    background-color: var(--preto-0);
 }
 .logo{
     display: flex;
