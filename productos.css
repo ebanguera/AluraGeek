@@ -1,0 +1,7 @@
+.Productos{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    padding: 20px;
+    position: relative;
+}

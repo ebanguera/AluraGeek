@@ -1,0 +1,32 @@
+.producto{
+    display:flex;
+    flex-direction: column;
+}
+
+.producto ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 174px;
+}
+.producto ul li.imagen{
+    position: relative;
+    width: 100%;
+    height: 176px;
+}
+.producto ul li img{
+    width: 100%;
+    height: 176px;
+    object-fit: cover;
+}
+
+.producto ul li.imagen img{
+    position: absolute;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+.producto ul li.imagen img.top:hover{
+    opacity: 0;
+}
