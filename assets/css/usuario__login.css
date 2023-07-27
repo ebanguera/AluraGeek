@@ -1,0 +1,13 @@
+.Usuario{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.usuario__login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
