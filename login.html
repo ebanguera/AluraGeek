@@ -20,21 +20,24 @@
 
         <header>
 
-            <section class="header">
+            <section class="header" style="justify-content: center; gap: 616px;">
 
-                <div class="logo">
-                    <img class="icono" src="./assets/img/logo-2.png" alt="logo agencia">
-                    <img src="./assets/img/logo-1.svg" alt="Nombre">
+                <div class="busueda__logo" style="display: flex; gap: 32px;">
+                    <div class="logo">
+                        <img class="icono" src="./assets/img/logo-2.png" alt="logo agencia">
+                        <img src="./assets/img/logo-1.svg" alt="Nombre">
+                    </div>
+                    
+                    <form class="busqueda">
+                        <input type="text" placeholder="¿Qué desea buscar?">
+                        <button type="submit"><img src="./assets/img/lupa.svg" alt="Lupa de busqueda"></button>
+                    </form>
                 </div>
-                
-                <form class="busqueda">
-                    <input type="text" placeholder="¿Qué desea buscar?">
-                    <button type="submit"><img src="./assets/img/lupa.svg" alt="Lupa de busqueda"></button>
-                </form>
-    
-                <div class="login">
+
+                <div class="login" style="visibility: hidden;">
                     <button type="button" onclick="window.location.href='login.html'">Login</button>
                 </div>
+
 
             </section>
 
