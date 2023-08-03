@@ -8,3 +8,11 @@
     flex-wrap: wrap;
     gap: 1em;
 }
+
+.logo__menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
