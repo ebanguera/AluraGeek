@@ -11,6 +11,7 @@ header{
     padding: 10px;
     flex-wrap: wrap;
     background-color: var(--preto-0);
+    gap:600px;
 }
 .logo{
     display: flex;
@@ -29,6 +30,13 @@ header{
     padding: 0.5rem;
     border-radius: 20px;
     /* width: ; */
+}
+
+.busqueda__logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 .busqueda input{
     border: none;
@@ -65,4 +73,10 @@ header{
 .login button:focus{
     background-color: #95bdf2;
     transform-box:  fill-box ;
+}
+
+@media screen and (max-width:1200px) {
+    .header{
+        gap:10px;
+    }
 }
