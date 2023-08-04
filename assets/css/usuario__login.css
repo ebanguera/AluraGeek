@@ -4,10 +4,40 @@
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
+    padding: 32px;
 }
 
 .usuario__login{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 50vw;
+    gap: 10px;
+}
+
+.usuario__login input{
+    height: 2em;
+}
+
+.usuario__login input::placeholder{
+    font-size: 0.95em;
+}
+
+.btn__formulario {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 1em;
+    align-items: center;
+    background: var(--azul-100, #2A7AE4);
+    flex-shrink: 0;
+    border: none;
+    color: var(--preto-branco, #FFF);
+    
+}
+
+@media screen and (max-width:500px) {
+    .login{
+        display:none;
+    }
 }
