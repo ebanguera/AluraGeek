@@ -17,13 +17,12 @@
         <link rel="stylesheet" href="./assets/css/caja_productos.css">
         <link rel="stylesheet" href="productos.css">
 
-        <script src="home.js" defer></script>
     </head>
 
     <body>
         <header>
 
-            <section class="header" style="justify-content: center;">
+            <section class="header">
 
                 <div class="busqueda__logo" >
                     <div class="logo">
@@ -47,12 +46,12 @@
             <section class="banner">
 
                 <div class="banner__img">
-                    <img src="./assets/img/colombia-1.jpg" alt="Desierto la Tatacoa">
-                    <img src="./assets/img/colombia-2.jpg" alt="Islote">
-                    <img src="./assets/img/colombia-3.jpg" alt="Peñol guatape">
-                    <img src="./assets/img/colombia-4.jpg" alt="Valle del cocora">
-                    <img src="./assets/img/colombia-5.jpg" alt="Parque del cafe">
-                    <img src="./assets/img/colombia-6.jpg" alt="Santuario de las lajas">
+                    <img src="./assets/img/colombia-1.jpg" id="img-1" alt="Desierto la Tatacoa">
+                    <img src="./assets/img/colombia-2.jpg" id="img-2" alt="Islote">
+                    <img src="./assets/img/colombia-3.jpg" id="img-3" alt="Peñol guatape">
+                    <img src="./assets/img/colombia-4.jpg" id="img-4" alt="Valle del cocora">
+                    <img src="./assets/img/colombia-5.jpg" id="img-5" alt="Parque del cafe">
+                    <img src="./assets/img/colombia-6.jpg" id="img-6" alt="Santuario de las lajas">
                 </div>
 
                 <div class="banner__titulo">
@@ -65,7 +64,18 @@
                     <button>Ver Promociones</button>
                 </div>
 
+                <div class="navigation-button">
+                    <span class="dot active" onclick="changeSlide(0)"></span>
+                    <span class="dot" onclick="changeSlide(1)"></span>
+                    <span class="dot" onclick="changeSlide(2)"></span>
+                    <span class="dot" onclick="changeSlide(3)"></span>
+                    <span class="dot" onclick="changeSlide(4)"></span>
+                    <span class="dot" onclick="changeSlide(5)"></span>
+                </div>
+
             </section>
+
+            
 
         </header>
 
@@ -311,4 +321,38 @@
         </section>
 
     </body>
+
+    <script>
+        var currentImg = 0;
+        var imgs = document.querySelectorAll('.banner__img img');
+        let dots = document.querySelectorAll('.dot');
+        var interval = 3000;
+
+        var timer = setInterval(changeSlide, interval);
+
+        function changeSlide(n) {
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].style.opacity = 0;
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+
+            currentImg = (currentImg + 1) % imgs.length;
+
+            if (n != undefined) {
+                clearInterval(timer);
+                timer = setInterval(changeSlide, interval);
+                currentImg = n;
+            }
+
+            imgs[currentImg].style.opacity = 1;
+            dots[currentImg].className += ' active';
+        }
+
+        function calculateDays(today, eventDate) {
+            const difference = eventDate.getTime() - today.getTime();
+            return Math.ceil(difference / (1000 * 3600 * 24)); // convert to days
+        }
+    </script>
+
+
 </html>

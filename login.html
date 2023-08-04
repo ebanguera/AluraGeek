@@ -21,9 +21,9 @@
 
         <header>
 
-            <section class="header" style="justify-content: center; gap: 600px;">
+            <section class="header">
 
-                <div class="busueda__logo" style="display: flex; gap: 32px;">
+                <div class="busqueda__logo" >
                     <div class="logo">
                         <img class="icono" src="./assets/img/logo-2.png" alt="logo agencia">
                         <img src="./assets/img/logo-1.svg" alt="Nombre">
@@ -58,30 +58,40 @@
 
         <section class="Contacto">
             <div class="contacto__banner">
-                <div class="logo">
-                    <img class="icono" src="./assets/img/logo-2.png" alt="">
-                    <img src="./assets/img/logo-1.svg" alt="">
-                </div>
 
-                <div class="menu">
-                    <ul>
-                        <li>Quienes somos</li>
-                        <li>Politicas de privacidad</li>
-                        <li>Programa de fidelidad</li>
-                        <li>Nuestras tiendas</li>
-                        <li>Quiero ser franquiciado</li>
-                        <li>Anuncie aqui</li>
-                    </ul>
+                <div class="logo__menu">
+                    <div class="logo">
+                        <img class="icono" src="./assets/img/logo-2.png" alt="">
+                        <img src="./assets/img/logo-1.svg" alt="">
+                    </div>
+    
+                    <div class="menu">
+                        <ul>
+                            <li>Quienes somos</li>
+                            <li>Politicas de privacidad</li>
+                            <li>Programa de fidelidad</li>
+                            <li>Nuestras tiendas</li>
+                            <li>Quiero ser franquiciado</li>
+                            <li>Anuncie aqui</li>
+                        </ul>
+                    </div>
                 </div>
+                
 
                 <div class="hablemos">
                     <h3>Hable con nosotros</h3>
                     <form action="">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Nombres y Apellidos">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                        <button class="boton__formulario" type="submit">Enviar</button>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Nombres y Apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="boton__formulario" type="submit">Enviar</button>
+                        </div>
                     </form>
                     
                 </div>
