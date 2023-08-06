@@ -8,18 +8,19 @@ let perfil = {
     
 btn.addEventListener('click', (e) => {
     e.preventDefault()
-    const datos = {
-        username: email.value,
-        contraseña: contraseña.value
-    }
 
-    if((datos.username == perfil.email_v) && (datos.contraseña == perfil.password))
+    localStorage.setItem("usuario",JSON.stringify(perfil))
+    var localstorage = localStorage.getItem("usuario")
+    var araystorage=JSON.parse(localstorage)
+    
+    if((email.value == araystorage.email_v) && (contraseña.value == araystorage.password))
         window.location="productos.html"
-    else if((datos.username == perfil.email_v) && (datos.contraseña != perfil.password))
+    else if((email.value == araystorage.email_v) && (contraseña.value != araystorage.password))
         alert("contraseña incorrecta")
-    else if((datos.username != perfil.email_v) && (datos.contraseña != perfil.password))
+    else if((email.value != araystorage.email_v) && (contraseña.value != araystorage.password))
         alert("Usted no tiene acceso")
-    else if((datos.username != perfil.email_v) || (datos.contraseña != perfil.password))
+    else if((email.value != araystorage.email_v) || (contraseña.value != araystorage.password))
         alert("correo o contraseña incorrecta")
+
     })
 
